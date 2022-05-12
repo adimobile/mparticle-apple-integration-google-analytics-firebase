@@ -14,7 +14,7 @@ let package = Package(
             ]),
     ],
     dependencies: [
-        .package(url: "https://github.com/mParticle/mparticle-apple-sdk", .upToNextMajor(from: "8.7.0")),
+        .package(name: "mParticle-Apple-SDK", url: "https://github.com/mParticle/mparticle-apple-sdk", .upToNextMajor(from: "8.7.0")),
         .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMinor(from: "8.6.0")),
     ],
     targets: [
@@ -22,7 +22,7 @@ let package = Package(
             name: "mParticle-Apple-Integration-Google-Analytics-Firebase",
             dependencies: [
                 .product(name: "FirebaseAnalytics", package: "Firebase"),
-                .product(name: "mParticle-Apple-SDK", package: "mparticle-apple-sdk")
+                .product(name: "mParticle-Apple-SDK", package: "mParticle-Apple-SDK")
             ],
             path: "mParticle-Google-Analytics-Firebase",
             publicHeadersPath: "."
