@@ -8,7 +8,6 @@ let package = Package(
     products: [
         .library(
             name: "mParticle-Apple-Integration-Google-Analytics-Firebase",
-            type: .dynamic,
             targets: [
                 "mParticle-Apple-Integration-Google-Analytics-Firebase"
             ]),
