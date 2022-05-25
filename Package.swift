@@ -29,7 +29,7 @@ let package = Package(
             ],
             path: "mParticle-Google-Analytics-Firebase",
             exclude: ["Info.plist"],
-            publicHeadersPath: "mParticle-Google-Analytics-Firebase/include",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath(".")
             ]
