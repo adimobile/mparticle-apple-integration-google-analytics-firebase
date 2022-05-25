@@ -28,7 +28,11 @@ let package = Package(
                 .product(name: "mParticle-Apple-SDK", package: "mParticle-Apple-SDK")
             ],
             path: "mParticle-Google-Analytics-Firebase",
-            publicHeadersPath: "include"
+            exclude: ["Info.plist"],
+            publicHeadersPath: "mParticle-Google-Analytics-Firebase/include",
+            cSettings: [
+                .headerSearchPath(".")
+            ]
         )
     ]
 )
