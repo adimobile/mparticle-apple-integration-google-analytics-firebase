@@ -18,7 +18,7 @@ let package = Package(
             url: "https://github.com/mParticle/mparticle-apple-sdk", .upToNextMajor(from: "8.2.0")),
         .package(
             name: "Firebase",
-            url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMinor(from: "9.3.0")),
+            url: "https://github.com/firebase/firebase-ios-sdk.git", .upToNextMinor(from: "9.5.0")),
     ],
     targets: [
         .target(
